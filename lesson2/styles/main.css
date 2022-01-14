@@ -1,0 +1,193 @@
+
+.lesson-2-header-container {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr,;
+    
+    
+}
+
+.design-principles {
+        grid-column: 2;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    background-image: linear-gradient(to bottom, rgb(185, 185, 185), rgb(61, 61, 138));
+    font-family:monospace;
+    font-size: 12pt;
+    color:rgb(255, 255, 255);
+}
+
+.meta-container {
+    grid-column: 1;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.forsgren-container {
+    grid-column: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.tesla-container {
+    grid-column: 1;
+    padding: 10px;
+    text-align: center;
+    
+}
+footer {
+    color:rgb(248, 248, 248);
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    grid-column: 1;
+    width: 100%;
+    
+    
+
+}
+
+
+@media only screen and (min-width: 651px) {
+    .lesson-2-header-container {
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr,;
+        
+        
+    }
+    
+    .design-principles {
+            grid-column: 2;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        font-family:monospace;
+        font-size: 12pt;
+        color:rgb(255, 254, 254);
+    }
+    
+    .meta-container {
+        grid-column: 1;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .forsgren-container {
+        grid-column: 2;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .tesla-container {
+        grid-column: span 2;
+        padding: 5px;
+        text-align: center;
+    }
+
+    footer {
+        color:rgb(248, 248, 248);
+        position: relative;
+        bottom: 0;
+        text-align: center;
+        grid-column: span 2;
+        width: 100%;
+        
+        
+    
+    }
+}
+
+
+@media only screen and (min-width: 958px) {
+    .lesson-2-header-container {
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr,;
+        
+        
+    }
+    
+    .design-principles {
+            grid-column: 2;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr;
+        font-family:monospace;
+        font-size: 12pt;
+        color:rgb(255, 255, 255);
+    }
+    
+    .meta-container {
+        grid-column: 1;
+        padding: 5px;
+    }
+    
+    .forsgren-container {
+        grid-column: 2;
+        padding: 5px;
+    }
+    
+    .tesla-container {
+        grid-column: 3;
+        padding: 5px;
+    }
+
+    footer {
+        color:rgb(248, 248, 248);
+        position: relative;
+        bottom: 0;
+        text-align: center;
+        grid-column: 2;
+        
+        
+    
+    }
+}
+
+
+
+
+
+/* .lesson-2-header-container {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr,;
+    
+    
+}
+
+.design-principles {
+        grid-column: 2;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    background-image: linear-gradient(white, grey);
+    font-family:monospace;
+    font-size: 12pt;
+    color:rgb(0, 0, 0);
+}
+
+.meta-container {
+    grid-column: 1;
+    padding: 5px;
+}
+
+.forsgren-container {
+    grid-column: 2;
+    padding: 5px;
+}
+
+.tesla-container {
+    grid-column: 3;
+    padding: 5px;
+}
+
+ */
+

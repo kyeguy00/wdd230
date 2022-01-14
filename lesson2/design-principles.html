@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name = "author" content = "Kyle Southwick">
+        <meta name="description" content ="Lesson 2 for WDD 230">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <title> WDD 230 Design Principles</title>
+    </head>
+    <body>
+        <header> 
+            <div class ="lesson-2-header-container">
+                <h1 class="design-principles"> Design Principles: Kyle Southwick
+                </h1>
+            </div>
+        </header>
+        <main>
+            <div class ="meta-container">
+            <h2 class="whitespace"> White Space</h2>
+            <h3 class="meta"><a class="meta-link" href="https://about.facebook.com/meta/">Meta</a></h3>
+            <img class="meta-website" src="images/meta.png" alt ="Meta website example" style="width: 300px; height:600px;">
+            <p>Meta/Facebook does a great job at using the correct amount of whitespace. The padding is enough, but not too much to the point that everything is spread out.</p>
+            </div>
+            
+            <div class = "forsgren-container">
+            <h2 class="Contrast"> Contrast</h2>
+            <h3 class="Forsgren"><a href="https://www.forsgren.com/">Forsgren</a></h3>
+            
+            <img class="forsgren-website" src="images/forsgren.png" alt ="Forsgren website example" style="width: 300px; height:600px;">
+            <p>Forsgren website does a good job at making their website look good and readable through their contrast. It isn't anything flashy which is what I like. Simple, to the point, and does what it is supposed to do.</p>
+
+            </div>
+            <div class = "tesla-container">
+            <h2 class="Repetition">Repetition</h2>
+            <h3 class="Tesla"><a href="https://www.tesla.com/">Tesla</a></h3>
+            
+            <img class="tesla-website" src="images/tesla.png" alt = "Tesla website example" style="width: 300px; height:600px;">
+            <p>Tesla's website has a great use of repetition. As you scroll down the page it is consistent and you know what to expect as you go through.
+                It goes product by product as you are scrolling and it is the same layout for each product. This makes it more user friendly and allows a better overall user experience.
+            </p>
+            </div>
+            <footer>
+                &copy;<span id="year"></span> .:|:. Kyle Southwick .:|:. Idaho
+                <div id="date"></div>
+            </footer>
+            <script>
+                document.getElementById("date").innerHTML = new Date(document.lastModified)
+            </script>
+            <script src="date.js"></script>
+        </main>
+    </body>
+</html>

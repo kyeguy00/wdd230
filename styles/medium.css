@@ -1,0 +1,8 @@
+@media screen and (min-width: 32.5em) {
+    main {
+        background-image:linear-gradient( white, rgb(81, 148, 128));
+        color: rgb(35, 75, 71);
+        font-size: 14px;
+    }
+    
+}
