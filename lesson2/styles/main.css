@@ -1,7 +1,7 @@
 
 .lesson-2-header-container {
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr,;
+    grid-template-columns: 1fr, 1fr, 1fr;
     
     
 }
@@ -14,7 +14,7 @@ main {
     display: grid;
     grid-template-columns: 1fr, 1fr, 1fr;
     background-image: linear-gradient(to bottom, rgb(185, 185, 185), rgb(61, 61, 138));
-    font-family:monospace;
+    font-family: "Trirong", serif;
     font-size: 12pt;
     color:rgb(255, 255, 255);
 }
@@ -54,7 +54,7 @@ footer {
 @media only screen and (min-width: 651px) {
     .lesson-2-header-container {
         display: grid;
-        grid-template-columns: 1fr, 1fr, 1fr,;
+        grid-template-columns: 1fr, 1fr, 1fr;
         
         
     }
@@ -66,7 +66,7 @@ footer {
     main {
         display: grid;
         grid-template-columns: 1fr, 1fr;
-        font-family:monospace;
+        font-family: "Trirong", serif;
         font-size: 12pt;
         color:rgb(255, 254, 254);
     }
@@ -106,7 +106,7 @@ footer {
 @media only screen and (min-width: 958px) {
     .lesson-2-header-container {
         display: grid;
-        grid-template-columns: 1fr, 1fr, 1fr,;
+        grid-template-columns: 1fr, 1fr, 1fr;
         
         
     }
@@ -118,7 +118,7 @@ footer {
     main {
         display: grid;
         grid-template-columns: 1fr, 1fr, 1fr;
-        font-family:monospace;
+        font-family: "Trirong", serif;
         font-size: 12pt;
         color:rgb(255, 255, 255);
     }
@@ -149,45 +149,3 @@ footer {
     
     }
 }
-
-
-
-
-
-/* .lesson-2-header-container {
-    display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr,;
-    
-    
-}
-
-.design-principles {
-        grid-column: 2;
-}
-
-main {
-    display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
-    background-image: linear-gradient(white, grey);
-    font-family:monospace;
-    font-size: 12pt;
-    color:rgb(0, 0, 0);
-}
-
-.meta-container {
-    grid-column: 1;
-    padding: 5px;
-}
-
-.forsgren-container {
-    grid-column: 2;
-    padding: 5px;
-}
-
-.tesla-container {
-    grid-column: 3;
-    padding: 5px;
-}
-
- */
-
