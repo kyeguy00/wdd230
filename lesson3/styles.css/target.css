@@ -1,0 +1,98 @@
+
+
+body {
+    font-family: "Trirong", serif;
+    
+}
+
+
+header {
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(71, 15, 15));
+}
+
+.target-header-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+nav {
+    text-align: center;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+}
+
+nav div {
+	flex: 1 1 auto;
+}
+
+nav a {
+    padding: 5px;
+	color: #fff;
+	font-size: 1.1rem;
+    text-align: center;
+}
+
+
+nav a:hover {
+	background-color: rgba(122, 122, 122, 0.733);
+    border-bottom: solid rgb(117, 0, 0);
+    border-left: solid rgb(117, 0, 0);
+    border-radius: 30px;
+    padding: 5px;
+	color: rgb(255, 255, 255);
+}
+
+#photo {
+    border-radius: 30%;
+    margin: 10px;
+}
+
+.target-columns {
+    display: flex;
+    padding: 10px;
+}
+
+.target-columns div {
+    flex:1;
+    border:1px solid;
+    text-align: center;
+    border-color: grey;
+  }
+
+
+
+
+@media only screen and (max-width: 958px) {
+    .target-columns, .target-columns div {
+        flex-direction: column;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .target-columns, .target-columns div {
+        flex-direction: column;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav a:hover {
+        background-color: rgba(255, 255, 255, 0);
+        border-bottom: solid rgba(117, 0, 0, 0);
+        border-left: solid rgba(117, 0, 0, 0);
+        border-radius: 10px;
+        padding: 1px;
+        color: rgb(0, 0, 0);
+    }
+    
+    
+}
