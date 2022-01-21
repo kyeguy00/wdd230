@@ -4,7 +4,12 @@ body {
     font-family: "Trirong", serif;
     
 }
-
+footer {
+    display: block;
+    
+    text-align: center;
+    
+}
 
 header {
     align-items: center;
@@ -58,6 +63,7 @@ nav a:hover {
 .target-columns {
     display: flex;
     padding: 10px;
+    flex-direction: column;
 }
 
 .target-columns div {
@@ -65,6 +71,7 @@ nav a:hover {
     border:1px solid;
     text-align: center;
     border-color: grey;
+    flex-direction: column;
   }
 
 

@@ -28,7 +28,14 @@
     <h2>Font</h2>
     <p>The font will remain the same throughout the webpage. It will be Trirong.  </p>
     </div>
-    
+    <footer>
+        &copy;<span id="year"></span> .:|:. Kyle Southwick .:|:. Idaho
+        <div id="date"></div>
+    </footer>
+    <script>
+        document.getElementById("date").innerHTML = new Date(document.lastModified)
+    </script>
+    <script src="date.js"></script>
     
     
 </body>

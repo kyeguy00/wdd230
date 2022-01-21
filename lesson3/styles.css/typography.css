@@ -4,7 +4,10 @@ body {
     font-family: "Trirong", serif;
     
 }
-
+footer {
+    display: block;
+    text-align: center;
+}
 
 header {
     align-items: center;
@@ -58,6 +61,7 @@ nav a:hover {
 .typography-columns {
     display: flex;
     padding: 10px;
+    flex-direction: column;
 }
 
 .typography-columns div {
@@ -65,7 +69,10 @@ nav a:hover {
     border:1px solid;
     text-align: center;
     border-color: grey;
+    flex-direction: column;
   }
+
+ 
 
 
 
@@ -76,6 +83,7 @@ nav a:hover {
     }
     
 }
+
 
 @media only screen and (max-width: 600px) {
     .typography-columns, .typography-columns div {

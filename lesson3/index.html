@@ -47,6 +47,14 @@
         <p>The logo is in the header</p>
         </div>
     </section>
+    <footer>
+        &copy;<span id="year"></span> .:|:. Kyle Southwick .:|:. Idaho
+        <div id="date"></div>
+    </footer>
+    <script>
+        document.getElementById("date").innerHTML = new Date(document.lastModified)
+    </script>
+    <script src="date.js"></script>
     </main>
     
 </body>
