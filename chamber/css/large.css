@@ -2,24 +2,31 @@ body {
     font-family: "Trirong", serif;
 }
 footer {
-    display: block;
+    display: flex;
+    justify-content: center;
     text-align: center;
     background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(138, 89, 89));
+    color: rgb(0, 0, 0);
     
 }
 
-header {
+.header-container {
     display: flex;
+    flex-direction:row;
     align-items: center;
     width: 100%;
     background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(71, 15, 15));
    
 }
 
-.twitter {
-    padding: 5px;
-}
 
+
+ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    
+}
 
 nav {
     text-align: center;
@@ -37,23 +44,32 @@ nav a {
 
 
 nav a:hover {
-	/* background-color: rgba(122, 122, 122, 0.733); */
-    border-bottom: solid rgb(255, 255, 255);
-    /* border-left: solid rgb(117, 0, 0); */
-    /* border-radius: 30px; */
+	border-bottom: solid rgb(255, 255, 255);
     padding: 20px;
 	color: rgb(255, 255, 255);
     text-align: center;
 }
 
-#photo {
+.navigation li:first-child {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+#header-photo {
     border-radius: 30%;
     margin: 5px;
+}
+#footer-photo {
+    padding: 0px;
 }
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    color: black;
 }
 .call-to-action {
     grid-column: 2;
@@ -130,5 +146,13 @@ main {
     padding: 10px;
     display: flex;
     
-    
+
+}
+
+.socials-container {
+    display: flex;
+    align-items: center;
+}
+#instagram {
+    padding: 5px;
 }

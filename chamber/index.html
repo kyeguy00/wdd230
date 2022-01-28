@@ -6,22 +6,31 @@
     <meta name="description" content ="Kanab Chamber">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/base.css">
     
     <title>Kanab Chamber</title>
 </head>
 <body>
     <header>
-        <img id="photo" src="images/Kanabchambers.png" alt = "Kanab Chambers logo" height="100" width="100">
+        <div class="header-container">
+        <img id="header-photo" src="images/Kanabchambers.png" alt = "Kanab Chambers logo" height="100" width="100">
         <h1 class="kanab-chamber"> Kanab Chamber</h1>
-        <div class="date"><date></date></div>
+        <span class="date"><date></date></span>
         <nav>
-            <div><a href="#">Discover</a></div>
-            <div><a href="#">Directory</a></div>
-            <div><a href="#">Join</a></div>
-            <div><a href="#">Contact</a></div>
+            <ul class= "navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776Menu</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
             </nav>
-            <div class="twitter"><a href="#"> <img id = twitter src="images/twitter.png" alt = "Twitter Logo" height="50" width=50></a></div>
-    <div class="instagram"><a href="#"> <img id = instagram src="images/instagram.png" alt = "Instagram Logo" height="50" width=50></a></div>
+            <div class="socials-container">
+            <div><a href="#"> <img id="twitter" src="images/twitter.png" alt = "Twitter Logo" height="50" width=50></div>
+            <div><a href="#"> <img id= "instagram" src="images/instagram.png" alt = "Instagram Logo" height="50" width=50></div>
+            </div>
+        </div>
         
     
 </header>
@@ -37,12 +46,14 @@
 
     </main>
     <footer>
-        &copy;<span id="year"></span> Kanab Chamber | Kyle Southwick
+        <img id="footer-photo" src="images/Kanabchambers.png" alt = "Kanab Chambers logo" height="40" width="40">
+        &copy;<span id="year"></span> | Kanab Chamber | Kyle Southwick | WDD 230 Project |
          <div id="date"></div>
     </footer>
     <script>
         document.getElementById("date").innerHTML = new Date(document.lastModified)
     </script>
     <script src="js/date.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
