@@ -13,9 +13,13 @@
         
         
     }
+    p {
+        font-size: 20pt;
+    }
     .call-to-action {
         grid-column: 1;
         grid-row: 1;
+        
     }
     .news {
         grid-column: 1;
