@@ -106,8 +106,10 @@
     }
     footer {
         color: rgb(0, 0, 0);
+        font-size: 18pt;
     }
     .date {
         color: white;
+        font-size: 13pt;
     }
 }
