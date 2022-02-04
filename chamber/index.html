@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name = "author" content = "Kyle Southwick">
-    <meta name="description" content ="Kanab Chamber">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -13,10 +13,16 @@
 </head>
 <body>
     <header>
+        
         <div class="header-container">
+            
         <img id="header-photo" src="images/Kanabchambers.png" alt = "Kanab Chambers logo" height="100" width="100">
         <h1 class="kanab-chamber"> Kanab Chamber</h1>
         <span class="date"><date></date></span>
+        <h3>
+            <span id="message1"></span>
+        </h3>
+        
         <nav>
             <ul class= "navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776Menu</a></li>
@@ -35,14 +41,70 @@
     
 </header>
     <main>
-        <p class = "call-to-action">Hero with site name and call to action</p>
-        <p class = "event">Event</p>
-        <p class = "weather">Weather</p>
-        <p class = "join">Join</p>
-        <p class = "news">News Release</p>
-        <p class = "spotlight-1">Spotlight 1</p>
-        <p class = "spotlight-2">Spotlight 2</p>
-        <p class = "spotlight-3">Spotlight 3</p>
+        <div class = "call-to-action">
+        <img id="kanab" src="images/kanab-utah.jpg" alt = "Kanab overlook">
+        <h2 class="welcome">Welcome to Kanab</h2>
+        <a class="join-link" href="#">Join the Chamber</a>
+        </div>
+        <div class = "event">
+        <h2>Basketball Game</h2>
+        <p>Come watch the local high school boys basketball game this Friday at 7:00pm!</p>
+        </div>
+
+        <div class="weather">
+            <h2 class="weather-title">Weather</h2>
+        <div class="weatherWidget" >
+        
+        <script>
+            window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+            window.weatherWidgetConfig.push({
+                selector:".weatherWidget",
+                apiKey:"U3HLFFHLKTQLEEAHWFSWGBY6D", //Sign up for your personal key
+                location:"Kanab, UT", //Enter an address
+                unitGroup:"us", //"us" or "metric"
+                forecastDays:4, //how many days forecast to show
+                title:"Kanab, UT", //optional title to show in the 
+                showTitle:true, 
+                showConditions:true
+            });
+           
+            (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+         </script>
+         </div>
+         
+    </div>
+        <div class="join-us"> 
+        <a class = "join" href="#">Join Us!</a>
+        <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+    </div>
+    <div class="news"> 
+        <h2>News Release</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div  class = "spotlight-1">
+        <h2>Blackhawk Cabin</h2>
+        <img class="cabin" src="images/cabin.webp" height=200px width=300px>
+        <p>Need a place to stay? The blackhawk cabin is the perfect place!</p>
+    </div>
+    <div  class = "spotlight-2">
+        <h2>Escobars</h2>
+        <img class="escobars" src="images/food.png" height=70px width=70px>
+        <p>Looking for your next meal? Escobars is your best bet!</p>
+    </div>
+    <div  class = "spotlight-3">
+        <h2>Strawz</h2>
+        <img class="strawz" src="images/drink.webp" height=100px width=100px>
+        <p>Thirsty? Strawz has hundreds of drink combinations!</p>
+    </div>
 
     </main>
     <footer>
