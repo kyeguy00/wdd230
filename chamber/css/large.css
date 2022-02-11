@@ -132,18 +132,15 @@ main {
 
 .weather-title {
     /* background-color: rgb(31, 86, 124); */
-    background-image: linear-gradient(to bottom right, rgb(31, 86, 124), rgba(112, 112, 112, 0.459) );
+    
     color: white;
     padding: 10px;
 }
 
-/* .weather {
-    position: absolute;
-    top: -20px;
-    right: 12px;
-    color: magenta;
-    font-size: 12rem;
-} */
+.weather {
+    background-image: linear-gradient(to bottom right, rgb(31, 86, 124), rgba(112, 112, 112, 0.459) );
+    color: white;
+}
 
 .join {
     /* padding: 50px; */

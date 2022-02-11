@@ -16,7 +16,7 @@
         
         <div class="header-container">
             
-        <img id="header-photo" src="images/Kanabchambers.png" alt = "Kanab Chambers logo" height="100" width="100">
+        <img id="header-photo" src="images/Kanabchambers.webp" alt = "Kanab Chambers logo" height="100" width="100">
         <h1 class="kanab-chamber"> Kanab Chamber</h1>
         <span class="date"><date></date></span>
         <h3>
@@ -42,7 +42,13 @@
 </header>
     <main>
         <div class = "call-to-action">
-        <img id="kanab" src="images/kanab-utah.jpg" alt = "Kanab overlook">
+            <picture>
+                
+                <source srcset="images/wdd230-org-400.jpg" media="min-width:500px) and (max-width:799px)">
+                <source srcset="images/wdd230-org-600.jpg" media="(min-width:800px)">
+            <img id="kanab" src="images/wdd230-org-250.jpg" alt = "Kanab overlook">
+
+            </picture>
         <h2 class="welcome">Welcome to Kanab</h2>
         <a class="join-link" href="#">Join the Chamber</a>
         </div>
@@ -53,31 +59,13 @@
 
         <div class="weather">
             <h2 class="weather-title">Weather</h2>
-        <div class="weatherWidget" >
+            <p>Wind Speed: <span id="wind-speed"></span>mph  </p>
+            <p>Temperature: <span id="temperature"></span>°F  </p>
+            <p>Wind Chill: <span id="feelTemp"></span>  </p>
+        </div>
         
-        <script>
-            window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
-            window.weatherWidgetConfig.push({
-                selector:".weatherWidget",
-                apiKey:"U3HLFFHLKTQLEEAHWFSWGBY6D", //Sign up for your personal key
-                location:"Kanab, UT", //Enter an address
-                unitGroup:"us", //"us" or "metric"
-                forecastDays:4, //how many days forecast to show
-                title:"Kanab, UT", //optional title to show in the 
-                showTitle:true, 
-                showConditions:true
-            });
-           
-            (function() {
-            var d = document, s = d.createElement('script');
-            s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();
-         </script>
-         </div>
          
-    </div>
+    
         <div class="join-us"> 
         <a class = "join" href="#">Join Us!</a>
         <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
@@ -108,7 +96,7 @@
 
     </main>
     <footer>
-        <img id="footer-photo" src="images/Kanabchambers.png" alt = "Kanab Chambers logo" height="40" width="40">
+        <img id="footer-photo" src="images/Kanabchambers.webp" alt = "Kanab Chambers logo" height="40" width="40">
         &copy;<span id="year"></span> | Kanab Chamber | Kyle Southwick | WDD 230 Project |
          <div id="date"></div>
     </footer>
@@ -117,5 +105,6 @@
     </script>
     <script src="js/date.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 </html>
