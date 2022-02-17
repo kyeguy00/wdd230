@@ -12,10 +12,10 @@
 <body>
     <header class="discover-header">
 
-        <img id="header-photo" src="images/Kanabchambers.webp" alt = "Kanab Chambers logo" height="100" width="100">
+        <a href="index.html"><img id="header-photo" src="images/Kanabchambers.webp" alt = "Kanab Chambers logo" height="100" width="100"></a>
         <h1 class="discover"> Discover</h1>
         <span class="date"><date></date></span>
-        <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+        <p><span class="number-of-visits">Number of Visits: </span><span class="visits"></span></p>
         <h3>
             <span id="message1"></span>
         </h3>
@@ -23,16 +23,17 @@
         <nav>
             <ul class= "navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776Menu</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="#">Directory</a></li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
             </nav>
-            <div class="socials-container">
+            
             <div><a href="#"> <img id="twitter" src="images/twitter.png" alt = "Twitter Logo" height="50" width=50></div>
             <div><a href="#"> <img id= "instagram" src="images/instagram.png" alt = "Instagram Logo" height="50" width=50></div>
-            </div>
+            
         </div>
     </header>
     <div class="discover-images">
@@ -100,7 +101,7 @@
     </div>
     <footer>
         <img id="footer-photo" src="images/Kanabchambers.webp" alt = "Kanab Chambers logo" height="40" width="40">
-        &copy;<span id="year"></span> | Kanab Chamber | Kyle Southwick | WDD 230 Project |
+        <span class="copyright">&copy;</span><span id="year"></span> <p class="footer-text">| Kanab Chamber | Kyle Southwick | WDD 230 Project |</p>
          <div id="date"></div>
     </footer>
 </body>

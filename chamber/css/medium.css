@@ -1,5 +1,5 @@
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1250px) {
    
     body {
         font-family: "Trirong", serif;
@@ -97,6 +97,7 @@
     }
     nav a {
         padding: 1px;
+        margin: 2px;
         color: rgb(255, 255, 255);
         font-size: 1.1rem;
         text-align: center;
@@ -106,24 +107,19 @@
     nav a:hover {
         border: none;
         padding: 1px;
-        color: rgb(0, 0, 0);
-        background-image: linear-gradient(to right, rgb(255, 203, 203), rgb(224, 224, 224));
+        color: white;
+        background-color: black;
         text-align: center;
     }
-    .socials-container {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        padding: 5px;
-        margin: 10px;
 
-    }
     #instagram {
         padding: 5px;
+        margin: 2px;
         
     }
     #twitter {
         padding: 5px;
+        margin: 2px;
         
     }
     footer {
@@ -133,6 +129,11 @@
     .date {
         color: white;
         font-size: 13pt;
+        padding: 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
     }
     /* Discover page styling */
 
@@ -180,7 +181,7 @@
 
 .img-wrapper > img,
 .img-wrapper > .content-fade {
-    transition: 200ms ease-in-out;
+    transition: 400ms ease-in-out;
 }
 
 .img-wrapper:hover > img.blur {
@@ -193,5 +194,21 @@
 
 .img-wrapper:hover > .content-fade {
     opacity: 1;
+}
+.number-of-visits {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.visits {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
 }
 }

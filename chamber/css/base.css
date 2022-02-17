@@ -83,19 +83,21 @@
         
     }
     nav a {
-        padding: 0px;
+        padding: 1px;
         color: rgb(255, 255, 255);
         font-size: 13pt;
         text-align: center;
+        transition: background-color .5s ease-in-out;
     }
     
     
     nav a:hover {
         border: none;
-        padding: 0px;
-        color: rgb(0, 0, 0);
-        background-image: linear-gradient(to right, rgb(255, 203, 203), rgb(224, 224, 224));
+        padding: 1px;
+        color: none;
+        background-color: none;
         text-align: center;
+        
     }
     .socials-container {
         display: flex;
@@ -107,10 +109,12 @@
     }
     #instagram {
         padding: 5px;
+        margin: 1px;
         
     }
     #twitter {
         padding: 5px;
+        margin: 1px;
         
     }
 
@@ -129,14 +133,28 @@
     }
     #instagram {
         padding: 5px;
+        height: 30px;
         width: 30px;
-        height:30px;
+        transition: height .5s, width .5s;
+        border-radius: 30px;
     }
+    #instagram:hover {
+        height: 35px;
+        width: 35px;
+    }
+    
     #twitter {
-        padding: 5px;
+        height: 30px;
         width: 30px;
-        height:30px;
+        transition: height .5s, width .5s;
+        border-radius: 30px;
     }
+    
+    #twitter:hover {
+        height: 35px;
+        width: 35px;
+    }
+    
     /* Discover page styling */
 
 .discover-header {
@@ -183,7 +201,7 @@
 
 .img-wrapper > img,
 .img-wrapper > .content-fade {
-    transition: 200ms ease-in-out;
+    transition: 400ms ease-in-out;
 }
 
 .img-wrapper:hover > img.blur {

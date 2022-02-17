@@ -6,10 +6,15 @@ body {
 footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(138, 89, 89));
+    background-image: linear-gradient(to bottom right, rgb(131, 131, 131), rgb(71, 15, 15));
     color: rgb(0, 0, 0);
     
+}
+
+.footer-text, #year, .copyright, #date {
+    color: white;
 }
 
 .header-container {
@@ -17,7 +22,7 @@ footer {
     flex-direction:row;
     align-items: center;
     width: 100%;
-    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(71, 15, 15));
+    background-image: linear-gradient(to bottom right, rgb(131, 131, 131), rgb(71, 15, 15));
    
 }
 
@@ -39,22 +44,30 @@ nav {
     text-align: center;
     display: flex;
 	flex-direction: row;
+    gap: 4rem;
 }
 
 
 nav a {
-    padding: 20px;
+    padding: 5px;
+    margin: 40px;
+    border-radius: 30%;
 	color: rgb(255, 255, 255);
 	font-size: 1.1rem;
     text-align: center;
+    transition: background-color 1s;
 }
 
 
 nav a:hover {
-	border-bottom: solid rgb(255, 255, 255);
-    padding: 20px;
-	color: rgb(255, 255, 255);
+	background-color: black;
+    padding: 5px;
+	color: white;
     text-align: center;
+    border-radius: 30%;
+    
+    
+    
 }
 
 .navigation li:first-child {
@@ -66,11 +79,15 @@ nav a:hover {
 }
 
 #header-photo {
+    height: 60px;
+    width: 60px;
     border-radius: 30%;
     margin: 5px;
 }
 #footer-photo {
     padding: 0px;
+    height: 30px;
+    width: 30px;
 }
 main {
     display: grid;
@@ -223,7 +240,7 @@ h2 {
 }
 
 .date {
-    color: rgb(0, 0, 0);
+    color: white;
     text-align: center;
     font-size: 13pt;
     padding: 10px;
@@ -237,7 +254,27 @@ h2 {
     align-items: center;
 }
 #instagram {
+    display: flex;
+    margin: 10px;
     padding: 5px;
+    transition: height .5s, width .5s;
+    border-radius: 30px;
+}
+#instagram:hover {
+    height: 55px;
+    width: 55px;
+}
+
+#twitter {
+    display: flex;
+    margin: 10px;
+    transition: height .5s, width .5s;
+    border-radius: 30px;
+}
+
+#twitter:hover {
+    height: 55px;
+    width: 55px;
 }
 
 ::-webkit-scrollbar {
@@ -266,7 +303,7 @@ h2 {
     flex-direction:row;
     align-items: center;
     width: 100%;
-    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(71, 15, 15));
+    background-image: linear-gradient(to bottom right, rgb(131, 131, 131), rgb(71, 15, 15));
 }
 
 
@@ -306,11 +343,12 @@ h2 {
 
 .img-wrapper > img,
 .img-wrapper > .content-fade {
-    transition: 200ms ease-in-out;
+    transition: 400ms ease-in-out;
 }
 
 .img-wrapper:hover > img.blur {
     filter: blur(5px);
+    
 }
 
 .img-wrapper > .content-fade {
@@ -319,8 +357,16 @@ h2 {
 
 .img-wrapper:hover > .content-fade {
     opacity: 1;
+    
 }
 
+.number-of-visits {
+    color: white;
+}
+
+.visits {
+    color: white;
+}
 
 
 
