@@ -1,3 +1,5 @@
+/* Home page styling*/
+
 body {
     font-family: "Trirong", serif;
 }
@@ -256,3 +258,69 @@ h2 {
     border-color: rgb(102, 102, 102);
     
 }
+
+/* Discover page styling */
+
+.discover-header {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(71, 15, 15));
+}
+
+
+.discover-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: 10px;
+}
+
+.img-wrapper {
+    /* grid-column: 2;
+    justify-self: center; */
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrapper > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-wrapper > .content-fade {
+    position: absolute;
+    inset: 0;
+    font-size: 2rem;
+    padding: 1rem;
+    background: rgba(255,255,255,.4);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper > img,
+.img-wrapper > .content-fade {
+    transition: 200ms ease-in-out;
+}
+
+.img-wrapper:hover > img.blur {
+    filter: blur(5px);
+}
+
+.img-wrapper > .content-fade {
+    opacity: 0;
+}
+
+.img-wrapper:hover > .content-fade {
+    opacity: 1;
+}
+
+
+
+

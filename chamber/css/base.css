@@ -137,4 +137,65 @@
         width: 30px;
         height:30px;
     }
+    /* Discover page styling */
+
+.discover-header {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(71, 15, 15));
+}
+
+
+.discover-images {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: .5em;
+}
+
+.img-wrapper {
+    /* grid-column: 1; */
+    justify-self: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrapper > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-wrapper > .content-fade {
+    position: none;
+    inset: 0;
+    font-size: 2rem;
+    padding: 1rem;
+    background: rgba(255,255,255,.4);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper > img,
+.img-wrapper > .content-fade {
+    transition: 200ms ease-in-out;
+}
+
+.img-wrapper:hover > img.blur {
+    filter: none;
+}
+
+.img-wrapper > .content-fade {
+    opacity: 1;
+}
+
+.img-wrapper:hover > .content-fade {
+    opacity: 1;
+}  
+
 }
