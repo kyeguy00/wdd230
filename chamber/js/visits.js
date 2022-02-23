@@ -3,16 +3,23 @@ const todayDisplay = document.querySelector(".today");
 const visitsDisplay = document.querySelector(".visits");
 
 
-let numVisits = Number(window.localStorage.getItem("visits-ls"));
+let lastVisit = Number(window.localStorage.getItem("last-visit"));
 
 
 
-if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
+let newDate = Date.now();
+
+
+localStorage.setItem("last-visit", newDate);
+
+let difference = newDate - lastVisit;
+
+let daysLastVisit = difference / (1000 * 60 * 60 * 24);
+
+console.log(Math.floor(daysLastVisit));
+
+if (lastVisit !== 0) {
+visitsDisplay.textContent = Math.floor(daysLastVisit);
 } else {
-	visitsDisplay.textContent = `This is your first visit!`;
+visitsDisplay.textContent = "This is your first visit!"
 }
-
-numVisits++;
-localStorage.setItem("visits-ls", numVisits);
-todayDisplay.textContent = Date.now();

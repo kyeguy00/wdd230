@@ -1,4 +1,7 @@
 /* Home page styling*/
+html {
+    display: flex;
+}
 
 body {
     font-family: "Trirong", serif;
