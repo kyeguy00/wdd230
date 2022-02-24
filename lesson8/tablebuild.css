@@ -13,6 +13,11 @@ table, td {
     
     
 }
+
+table {
+    box-shadow: 10px 10px 10px rgb(151, 151, 151); 
+}
+
 tr:nth-child(even) {
     background-color: #f2f2f2;
   }
