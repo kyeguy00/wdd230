@@ -1,18 +1,9 @@
 @media only screen and (max-width: 750px) {
-   
-    body {
-        font-family: "Trirong", serif;
-        
-    }
-    main {
-        font-family: "Trirong", serif;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        color:rgb(0, 0, 0)
-        
-        
-    }
+   html {
+       display: flex;
+   }
+
+
     .join-link {
         position: absolute;
         top: 500px;
@@ -22,11 +13,13 @@
         font-size: 20pt;
     }
     .call-to-action {
+        display: flex;
         grid-column: 1;
         grid-row: 1;
         
     }
     .news {
+        
         grid-column: 1;
         grid-row: 2;
     }
@@ -125,7 +118,9 @@
     }
 
     footer {
-        color:rgb(0, 0, 0)
+        color:rgb(0, 0, 0);
+        font-size: 12px;
+        
     }
     .socials-container {
         display: flex;
@@ -135,7 +130,7 @@
         padding: 5px;
         height: 30px;
         width: 30px;
-        transition: height .5s, width .5s;
+        transition: none;
         border-radius: 30px;
     }
     #instagram:hover {
@@ -216,4 +211,10 @@
     opacity: 1;
 }  
 
+.membership-details > p {
+    font-size: 12px;
+}
+.membership-details > h2 {
+    font-size: 15px;
+}
 }

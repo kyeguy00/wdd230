@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanab Chamber - Join</title>
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+    <header class="discover-header">
+
+        <a href="index.html"><img id="header-photo" src="images/Kanabchambers.webp" alt = "Kanab Chambers logo" height="100" width="100"></a>
+        <h1 class="discover"> Join</h1>
+        <span class="date"><date></date></span>
+        <p><span class="number-of-visits">Days since last visit: </span><span class="visits"></span></p>
+        <h3>
+            <span id="message1"></span>
+        </h3>
+        
+        <nav>
+            <ul class= "navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+            </nav>
+            
+            <div><a href="#"> <img id="twitter" src="images/twitter.png" alt = "Twitter Logo" height="50" width=50></a></div>
+            <div><a href="#"> <img id= "instagram" src="images/instagram.png" alt = "Instagram Logo" height="50" width=50></a></div>
+            
+        </div>
+    </header>
+    
+   <h1>Thank you for joining the Kanab Commerce!</h1>
+    
+
+</body>
+<script>
+    document.getElementById("date").innerHTML = new Date(document.lastModified)
+</script>
+<script src="js/date.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/visits.js"></script>
+</html>

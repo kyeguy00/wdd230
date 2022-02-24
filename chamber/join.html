@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanab Chamber - Join</title>
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+    <header class="header-container">
+
+        <a href="index.html"><img id="header-photo" src="images/Kanabchambers.webp" alt = "Kanab Chambers logo" height="100" width="100"></a>
+        <h1 class="discover"> Join</h1>
+        <span class="date"><date></date></span>
+        <p><span class="number-of-visits">Days since last visit: </span><span class="visits"></span></p>
+        <h3>
+            <span id="message1"></span>
+        </h3>
+        
+        <nav>
+            <ul class= "navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+            </nav>
+            
+            <div><a href="#"> <img id="twitter" src="images/twitter.png" alt = "Twitter Logo" height="50" width=50></a></div>
+            <div><a href="#"> <img id= "instagram" src="images/instagram.png" alt = "Instagram Logo" height="50" width=50></a></div>
+            
+        </div>
+    </header>
+    <div class="form-section">
+    <h2>Fill out the form to get started:</h2>
+
+<form action="thankyou.html">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" required><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" required><br>
+  <label for="position">Position Title:</label><br>
+  <input type="text" id="position" name="position" pattern="[a-z]" min="7" title="Must be a minimum of 7 characters"><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" placeholder="jondoe@gmail.com" required><br>
+  <label for="phone">Phone Number:</label><br>
+  <input type="tel" id="phone" name="phone" required><br>
+  <label for="business">Business:</label><br>
+  <input type="text" id="business" name="business" required><br>
+  
+  <label>Choose your membership level:</label>
+  <input type="radio" id="np-membership" name="membership" value="NP Membership">
+  <label for="np-membership">NP Membership</label><br>
+  
+  <input type="radio" id="bronze-membership" name="membership" value="Bronze Membership">
+  <label for="bronze-membership">Bronze Membership</label><br>
+
+  <input type="radio" id="silver-membership" name="membership" value="Silver Membership">
+  <label for="silver-membership">Silver Membership</label><br>
+
+  <input type="radio" id="gold-membership" name="membership" value="Gold Membership">
+  <label for="gold-membership">Gold Membership</label><br><br>
+
+  
+<label>Business Description:</label>
+<textarea id="business-description" name="business-description"
+          rows="8" cols="40">
+</textarea>
+
+<input type="hidden" id="date" name="date" value="CurrentTime"> 
+<input type="hidden" id="time" name="time" value="CurrentDate"><br><br>
+  
+  
+  <input class="submit" type="submit" value="Submit">
+</form> 
+<div class="membership-details">
+    <h2 class="np">NP Membership</h2>
+    <p>The NP Membership is for non profit organizations and there is no fee!</p>
+
+    <h2 class="bronze">Bronze Membership</h2>
+    <p>The Bronze Membership is for businesses that are starting up. You will receive the basic advertisement starter pack. 
+        Only $25 a month!</p>
+    
+    <h2 class="silver">Silver Membership</h2>
+    <p>The Silver Membership is for businesses that need a little bit more. Only $30 a month!</p>
+
+    <h2 class="gold">Gold Membership</h2>
+    <p>The Gold Membership is for those that really want to invest into their business. Only $35 a month!</p>
+
+
+</div>
+</div>
+
+<footer>
+        <img id="footer-photo" src="images/Kanabchambers.webp" alt = "Kanab Chambers logo" height="40" width="40">
+        <span class="copyright">&copy;</span><span id="year"></span> <p class="footer-text">| Kanab Chamber | Kyle Southwick | WDD 230 Project |</p>
+         <div id="date"></div>
+    </footer>
+</body>
+<script>
+    document.getElementById("date").innerHTML = new Date(document.lastModified)
+</script>
+<script src="js/date.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/visits.js"></script>
+    <script type="text/javascript">
+        var d = new Date();
+
+        document.getElementById("date").value = d.toDateString();
+    
+        var hours = d.getHours();
+        var mins = d.getMinutes();
+        var seconds = d.getSeconds();
+        document.getElementById("time").value = hours + ":" + mins + ":" + seconds;
+    </script>
+</html>
+
+        

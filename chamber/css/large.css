@@ -1,12 +1,14 @@
 /* Home page styling*/
-html {
+/* html {
     display: flex;
-}
+} */
 
 body {
     font-family: "Trirong", serif;
 }
 footer {
+    
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +28,7 @@ footer {
     align-items: center;
     width: 100%;
     background-image: linear-gradient(to bottom right, rgb(131, 131, 131), rgb(71, 15, 15));
+    
    
 }
 
@@ -203,7 +206,7 @@ main {
     object-fit: fill;
 }
 
-h2 {
+main > h2 {
     font-size: 1.2em;
     color: white;
 }
@@ -371,5 +374,60 @@ h2 {
     color: white;
 }
 
+/* Join styles */
 
+.form-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-image: linear-gradient(180deg, rgba(71, 15, 15, 0.527), white);
+}
 
+.form-section > form {
+    padding: 10px;
+    grid-column: 2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.form-section > h2 {
+    text-align: center;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.submit {
+    border-radius: 30px;
+    padding: 5px;
+    margin: 10px;
+    background-color: green;
+    color: white;
+}
+
+.membership-details {
+    grid-column: 3;
+    text-align: center;
+    background-color: white;
+}
+
+.np {
+    color: rgb(61, 61, 61);
+}
+
+.bronze {
+    color: #CD7F32;
+}
+
+.silver {
+    color: #a3a2a2;
+}
+
+.gold {
+    color: #FFD700;
+}
+
+input {
+    border-radius: 30px;
+}
