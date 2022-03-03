@@ -1,0 +1,102 @@
+@media only screen and (max-width: 750px) {
+    html {
+        display: flex;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        text-align: center;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation li:first-child {
+        display: flex;
+        font-size: 13pt;
+        
+    }
+    .responsive li {
+        display: flex;
+        font-size: 13pt;
+        
+        
+    }
+    nav a {
+        padding: 1px;
+        color: rgb(255, 255, 255);
+        font-size: 13pt;
+        text-align: center;
+    }
+    
+    
+    nav a:hover {
+        border: none;
+        padding: 1px;
+        color: none;
+        background-color: none;
+        text-align: center;
+        
+    }
+    .socials-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 5px;
+        margin: 10px;
+
+    }
+    #instagram {
+        padding: 5px;
+        margin: 1px;
+        
+    }
+    #twitter {
+        padding: 5px;
+        margin: 1px;
+        
+    }
+
+    .date {
+        font-size: 13pt;
+        color: white;
+        
+    }
+
+    footer {
+        color:rgb(0, 0, 0);
+        font-size: 12px;
+        
+    }
+    .socials-container {
+        display: flex;
+        align-items: center;
+    }
+    #instagram {
+        padding: 5px;
+        height: 30px;
+        width: 30px;
+        transition: none;
+        border-radius: 30px;
+    }
+    #instagram:hover {
+        height: 30px;
+        width: 30px;
+    }
+    
+    #twitter {
+        height: 30px;
+        width: 30px;
+        border-radius: 30px;
+    }
+    
+    #twitter:hover {
+        height: 30px;
+        width: 30px;
+    }
+}

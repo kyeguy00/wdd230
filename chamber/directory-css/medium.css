@@ -1,0 +1,68 @@
+@media only screen and (max-width: 1250px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header {
+        margin: 10px;
+        
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        text-align: center;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation li:first-child {
+        display: flex;
+        
+    }
+    .responsive li {
+        display: flex;
+        
+        
+    }
+    nav a {
+        padding: 1px;
+        margin: 2px;
+        color: rgb(255, 255, 255);
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    
+    nav a:hover {
+        border: none;
+        padding: 1px;
+        color: white;
+        background-color: black;
+        text-align: center;
+    }
+
+    #instagram {
+        padding: 5px;
+        margin: 2px;
+        
+    }
+    #twitter {
+        padding: 5px;
+        margin: 2px;
+        
+    }
+    footer {
+        color: rgb(0, 0, 0);
+        font-size: 12px;
+    }
+    .date {
+        color: white;
+        font-size: 13pt;
+        padding: 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
