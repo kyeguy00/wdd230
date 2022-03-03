@@ -28,8 +28,10 @@ footer {
     align-items: center;
     width: 100%;
     background-image: linear-gradient(to bottom right, rgb(131, 131, 131), rgb(71, 15, 15));
-    
-   
+}
+
+.page-header {
+    color: white;
 }
 
 #message1 {
@@ -304,13 +306,7 @@ main > h2 {
 
 /* Discover page styling */
 
-.discover-header {
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    width: 100%;
-    background-image: linear-gradient(to bottom right, rgb(131, 131, 131), rgb(71, 15, 15));
-}
+
 
 
 .discover-images {
@@ -410,6 +406,8 @@ label {
     grid-column: 3;
     text-align: center;
     background-color: white;
+    border: 1px solid black;
+    border-bottom: 10px solid black;
 }
 
 .np {

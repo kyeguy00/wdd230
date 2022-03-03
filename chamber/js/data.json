@@ -1,0 +1,91 @@
+{
+"Businesses" : [
+    {
+        "name": "Escobars",
+        "image": "https://i2.wp.com/escobarskanab.com/wp-content/uploads/2021/06/cropped-apple-icon.png?fit=512%2C512&ssl=1",
+        "address": "373 E 300 S, Kanab, UT 84741",
+        "phone": "(435) 644-3739",
+        "website": "https://escobarskanab.com/"
+    },
+    {
+        "name": "Houstons",
+        "image": "https://lh3.googleusercontent.com/p/AF1QipPBDFvQ2vRhNoBuOC1l2KyxfrAS3xDvoyQg3T0D=s1600-w400",
+        "address": "32 E Center St, Kanab, UT 84741",
+        "phone": "(435) 644-2488",
+        "website": "There is no website currently"
+    },
+    {
+        "name": "Honey's Marketplace",
+        "image": "https://kanabchamber.com/wp-content/uploads/2020/02/Honeys_LogoBackround.png",
+        "address": "260 E 300 S, Kanab, UT 84741",
+        "phone": "(435) 644-5877",
+        "website": "https://www.honeysmarketplace.com/"
+    },
+    {
+        "name": "Moqui Cave",
+        "image": "https://donglutsdinosaurs.com/wp-content/uploads/2014/06/Moqui-Cave22-700x435.jpg",
+        "address": "4581 US-89, Kanab, UT 84741",
+        "phone": "(435) 644-8525",
+        "website": "https://www.moqui-cave.com/"
+    },
+    {
+        "name": "Lotsa Motsa Pizza",
+        "image": "https://dbl8bsn49lkgl.cloudfront.net/min/business-photos/108168164966_lotsa-motsa-pizza_image_removed.jpeg",
+        "address": "164 E 300 S, Kanab, UT 84741",
+        "phone": "(435) 644-3388",
+        "website": "There is no website currently"
+    },
+    {
+        "name": "Big Al's Burgers at The Junction",
+        "image": "https://kanabchamber.com/wp-content/uploads/2021/10/Big-Als.png",
+        "address": "185 E 300 S Kanab, UT 84741",
+        "phone": "435-644-8170",
+        "website": "https://www.facebook.com/Big-Als-Burgers-at-the-Junction-Drive-in-113503455350947/?rf=133183360063360"
+    },
+    {
+        "name": "Glazier's Market",
+        "image": "https://kanabchamber.com/wp-content/uploads/2019/12/jpg-LogoGlaziersMarket-test1-600x235.jpg",
+        "address": "264 S. 100 E. Kanab, UT 84741",
+        "phone": "435-644-5029",
+        "website": "https://www.glaziersmarket.com/"
+    },
+    {
+        "name": "Kanab Tour Company",
+        "image": "https://kanabchamber.com/wp-content/uploads/2021/10/Kanb-Tour-Company.png",
+        "address": "681 Chinle Dr Kanab, UT 84741",
+        "phone": "435-644-5525",
+        "website": "https://kanabtourcompany.com/"
+    },
+
+    {
+        "name": "Sego Restaurant",
+        "image": "https://kanabchamber.com/wp-content/uploads/2020/05/48A1795F-E9BD-499B-92B0-B9F59EEB719C-600x238.png",
+        "address": "190 N 300 W Kanab, UT 84741",
+        "phone": "435-644-5680",
+        "website": "http://www.segokanab.com/"
+    },
+    {
+        "name": "South Central Communications",
+        "image": "https://kanabchamber.com/wp-content/uploads/2022/01/South-Central-logo.png",
+        "address": "318 N 100 E Kanab, UT 84741",
+        "phone": "888-826-4211",
+        "website": "https://socen.com/"
+    },
+
+    {
+        "name": "Kanab Realty",
+        "image": "https://kanabchamber.com/wp-content/uploads/2017/08/RE-SIGN-600x368.jpg",
+        "address": "28 West 200 North Kanab, UT 84741",
+        "phone": "435-644-8000",
+        "website": "http://www.kanabrealty.com/"
+    },
+    {
+        "name": "Garkane Energy Cooperative",
+        "image": "https://kanabchamber.com/wp-content/uploads/2021/10/Garkane.png",
+        "address": "1802 US-89A Kanab, UT 84741",
+        "phone": "435-644-5026",
+        "website": "https://www.garkaneenergy.com/"
+    }
+    
+]
+}
