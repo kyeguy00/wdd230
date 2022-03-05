@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="directory-css/medium.css">
     <link rel="stylesheet" href="directory-css/base.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header class="header-container">
@@ -38,6 +39,8 @@
         </div>
     </header>
 
+    <btn tabindex="0" class="btntotop"><i class="fa fa-arrow-up"></i></btn>
+
     <h1>Check out some of Kanab's great companies</h1>
     <div class="cards">
         
@@ -50,6 +53,18 @@
 </body>
 <script>
     document.getElementById("date").innerHTML = new Date(document.lastModified)
+</script>
+<script>
+    const btntotop = document.querySelector(".btntotop");
+    btntotop.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth" 
+
+        });
+    });
+
 </script>
 <script src="js/date.js"></script>
     <script src="js/menu.js"></script>

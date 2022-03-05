@@ -161,18 +161,13 @@ nav a:hover {
     }
 
 .business-images {
-    width: auto;
     width: 200px;
     height: 200px;
     border-radius: 20px;
     box-shadow: 5px 3px rgba(107, 107, 107, 0.514);
 }
 
-.number-of-visits {
-    color: white;
-}
-
-.visits {
+.number-of-visits, .visits {
     color: white;
 }
 
@@ -205,3 +200,22 @@ h2 {
     
 }
 
+.btntotop {
+    background-color: rgb(128, 1, 1);
+    color:white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9;
+    font-size: 30px;
+    padding: 5px;
+    transition: background-color 1s;
+    cursor: pointer;
+    font-family: none;
+    border-radius: 50%;
+}
+
+.btntotop:hover {
+    background-color: rgb(88, 0, 0);
+    
+}

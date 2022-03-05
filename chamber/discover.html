@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
     <header class="header-container">
@@ -19,6 +21,7 @@
         <h3>
             <span id="message1"></span>
         </h3>
+        
         
         <nav>
             <ul class= "navigation">
@@ -36,68 +39,72 @@
             
         </div>
     </header>
-    <div class="discover-images">
-        <div class="img-wrapper">
+
+    
+
+    <div  class="discover-images">
+        <div tabindex="0" class="img-wrapper">
     <img class="blur" height="300px" width="400px" src="images/moqui-cave.jpg" alt="Moqui Cave">
     <div class="content-fade">Moqui Cave is a historical cave just on the outskirts of Kanab Utah</div>
 </div>
 
-    <div class="img-wrapper">
+    <div tabindex="0" class="img-wrapper">
     <img class="blur" height="300px" width="400px" src="images/houstons.jpeg" alt="Houstons Restaurant">
     <div class="content-fade">Houstons Restaurant is a locally run restaurant with a western feel</div>
     </div>
 
-    <div class="img-wrapper">
+    <div tabindex="0" class="img-wrapper">
         <img class="blur" height="300px" width="400px" src="images/honeys.jpeg" alt="Honeys Marketplace">
         <div class="content-fade">Honeys Marketplace is locally run and it is 1 of 2 grocery stores in Kanab</div>
         </div>
     
 
-    <div class="img-wrapper">
+    <div tabindex="0" class="img-wrapper">
     <img class="blur" height="300px" width="400px" src="images/escobars.jpg" alt="Escobars Restaurant">
     <div class="content-fade">Escobars is another locally run restaurant</div>
     </div>
 
-    <div class="img-wrapper">
+    <div tabindex="0"class="img-wrapper">
     <img class="blur" loading= "lazy" height="300px" width="400px" src="images/little-hollywood.jpg" alt="Little Hollywood">
     <div class="content-fade">Kanab Utah is know as "Little Hollywood" due to many films being produced there</div>
     </div>
 
-    <div class="img-wrapper">
+    <div tabindex="0"class="img-wrapper">
     <img class="blur" loading= "lazy" height="300px" width="400px" src="images/peekaboo.jpg" alt="Peekaboo slot canyon">
     <div class="content-fade">Peekaboo slot canyon is one of Kanabs many wonders</div>
     </div>
 
-    <div class="img-wrapper">
+    <div tabindex="0" class="img-wrapper">
     <img class="blur" loading= "lazy" height="300px" width="400px" src="images/wave.jpeg" alt="The Wave">
     <div class="content-fade">The Wave is a beautiful hike with some interesting rock formations</div>
     </div>
 
-        <div class="img-wrapper">
+        <div tabindex="0"class="img-wrapper">
     <img class="blur"loading= "lazy" height="300px" width="400px" src="images/toadstools.jpg" alt="Toadstools">
     <div class="content-fade">Toadstools is another hike with interesting rock formations</div>
     </div>
 
-    <div class="img-wrapper">
+    <div tabindex="0" class="img-wrapper">
         <img class="blur"loading= "lazy" height="300px" width="400px" src="images/cabin.webp" alt="Blackhawk Cabin">
         <div class="content-fade">There are numerous vacation rentals in Kanab</div>
         </div>
 
-    <div class="img-wrapper">
+    <div tabindex="0" class="img-wrapper">
         <img class="blur"loading= "lazy" height="300px" width="400px" src="images/kanab-reservoir.jpg" alt="Kanab Reservoir">
         <div class="content-fade">The Jackson Flat Reservoir is perfect for cooling down</div>
         </div>
     
-    <div class="img-wrapper">
+    <div tabindex="0"class="img-wrapper">
         <img class="blur"loading= "lazy" height="300px" width="400px" src="images/kanab-park.jpg" alt="Kanab Park">
         <div class="content-fade">The Kanab City Park is a great place for the kids</div>
         </div>
 
 
-    <div class="img-wrapper">
+    <div tabindex="0" class="img-wrapper">
     <img class="blur"loading= "lazy" height="300px" width="400px" src="images/belly-of-the-dragon.jpg" alt="Belly of the Dragon">
     <div class="content-fade">The Belly of the Dragon is a long stretching cave just outside of Kanab Utah</div>
     </div>
+    <btn accesskey="enter" tabindex="0" class="btntotop"><i class="fa fa-arrow-up"></i></btn>
     </div>
     <footer>
         <img id="footer-photo" src="images/Kanabchambers.webp" alt = "Kanab Chambers logo" height="40" width="40">
@@ -107,6 +114,19 @@
 </body>
 <script>
     document.getElementById("date").innerHTML = new Date(document.lastModified)
+</script>
+<script>
+    const btntotop = document.querySelector(".btntotop");
+    btntotop.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth" 
+
+        });
+    });
+    
+
 </script>
 <script src="js/date.js"></script>
     <script src="js/menu.js"></script>

@@ -86,6 +86,8 @@ nav a:hover {
     display: block;
 }
 
+
+
 #header-photo {
     height: 60px;
     width: 60px;
@@ -308,7 +310,24 @@ main > h2 {
 /* Discover page styling */
 
 
+.btntotop {
+    background-color: rgb(128, 1, 1);
+    color:white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9;
+    font-size: 30px;
+    padding: 5px;
+    transition: background-color 1s;
+    cursor: pointer;
+    border-radius: 50%;
+}
 
+.btntotop:hover {
+    background-color: rgb(88, 0, 0);
+    
+}
 
 .discover-images {
     display: grid;
@@ -322,6 +341,7 @@ main > h2 {
     justify-self: center; */
     position: relative;
     overflow: hidden;
+    
 }
 
 .img-wrapper > img {
@@ -337,7 +357,7 @@ main > h2 {
     inset: 0;
     font-size: 2rem;
     padding: 1rem;
-    background: rgba(255,255,255,.4);
+    background: rgba(255, 255, 255, 0.548);
     color: black;
     display: flex;
     justify-content: center;
@@ -358,7 +378,8 @@ main > h2 {
     opacity: 0;
 }
 
-.img-wrapper:hover > .content-fade {
+
+.img-wrapper:hover > .content-fade, .img-wrapper:focus > .content-fade {
     opacity: 1;
     
 }
