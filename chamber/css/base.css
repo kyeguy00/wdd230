@@ -29,8 +29,7 @@
         
     }
     .spotlight-2 {
-        grid-column: 1;
-        grid-row: 4;
+        display: none;
     }
     .spotlight-3 {
         grid-column: 1;
@@ -42,6 +41,9 @@
         grid-row: 6;
     }
     
+    .join-us {
+        display: none;
+    }
 
     .event {
         grid-column: 1;
@@ -49,8 +51,25 @@
     }
     .weather {
         grid-column: 1;
-        grid-row: 8;
     }
+
+    .weather > .weather-title {
+        font-size: 18px;
+        position: absolute;
+        top: -8px;
+        padding: 5px;
+    }
+
+    .weather > .temp, .ws, .wc, #icon-desc {
+        font-size: 12px;
+    }
+
+    .weather > #icon-desc {
+        position: absolute;
+        top: -15px;
+        padding: 5px;
+    }
+
     header {
         margin: 10px;
         
