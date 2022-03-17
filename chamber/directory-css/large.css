@@ -40,14 +40,13 @@ footer {
 ul {
     display: flex;
     list-style-type: none;
-    flex-direction: row;
+    
     
 }
 
 nav {
     text-align: center;
     display: flex;
-	flex-direction: row;
     gap: 4rem;
 }
 
@@ -60,6 +59,7 @@ nav a {
 	font-size: 1.1rem;
     text-align: center;
     transition: background-color 1s;
+    text-decoration: none;
 }
 
 
@@ -69,10 +69,8 @@ nav a:hover {
 	color: white;
     text-align: center;
     border-radius: 30%;
-    
-    
-    
 }
+
 
 .navigation li:first-child {
     display: none;
@@ -81,6 +79,7 @@ nav a:hover {
 .responsive li {
     display: block;
 }
+
 
 #header-photo {
     height: 60px;

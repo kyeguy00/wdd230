@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/base.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Kanab Chamber</title>
 </head>
 <body>
@@ -30,7 +30,7 @@
             <li><a href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
             </nav>
             <div class="socials-container">
@@ -44,14 +44,12 @@
     <main>
         <div class = "call-to-action">
             <picture>
-                
-                <!-- <source srcset="images/kanab-utah-400.jpg" media="min-width:500px) and (max-width:799px)">
-                <source srcset="images/kanab-utah-600.jpg" media="(min-width:800px)"> -->
+
             <img id="kanab" src="images/kanab-utah.jpg" alt = "Kanab overlook">
 
             </picture>
         <h2 class="welcome">Welcome to Kanab</h2>
-        <a class="join-link" href="#">Join the Chamber</a>
+        <a class="join-link" href="join.html">Join the Chamber</a>
         </div>
         <div class = "event">
         <h2>Basketball Game</h2>
@@ -70,7 +68,7 @@
          
     
         <div class="join-us"> 
-        <h2><a class = "join" href="#">Join Us!</a></h2>
+        <h2><a class = "join" href="join.html">Join Us!</a></h2>
         <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
     </div>
     <div class="news"> 
@@ -81,22 +79,28 @@
         sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 
-    <div  class = "spotlight-1">
-        <h2>Blackhawk Cabin</h2>
-        <img class="cabin" src="images/cabin.webp" height=200px width=300px>
-        <p>Need a place to stay? The blackhawk cabin is the perfect place!</p>
-    </div>
-    <div  class = "spotlight-2">
-        <h2>Escobars</h2>
-        <img class="escobars" src="images/food.png" height=70px width=70px>
-        <p>Looking for your next meal? Escobars is your best bet!</p>
-    </div>
-    <div  class = "spotlight-3">
-        <h2>Strawz</h2>
-        <img class="strawz" src="images/drink.webp" height=100px width=100px>
-        <p>Thirsty? Strawz has hundreds of drink combinations!</p>
+    
+    <div class="spotlight-1">
+        <h2 class="spotlight-1-header"></h2>
+        <img class="spotlight-1-image">
+        <p class="spotlight-1-phone"></p>
+        <p class="spotlight-1-address"></p>
     </div>
 
+    <div class="spotlight-2">
+        <h2 class="spotlight-2-header"></h2>
+        <img class="spotlight-2-image">
+        <p class="spotlight-2-phone"></p>
+        <p class="spotlight-2-address"></p>
+    </div>
+
+    <div class="spotlight-3">
+        <h2 class="spotlight-3-header"></h2>
+        <img class="spotlight-3-image">
+        <p class="spotlight-3-phone"></p>
+        <p class="spotlight-3-address"></p>
+    </div>
+    <btn accesskey="enter" tabindex="0" class="btntotop"><i class="fa fa-arrow-up"></i></btn>
     </main>
     <footer>
         <img id="footer-photo" src="images/Kanabchambers.webp" alt = "Kanab Chambers logo" height="40" width="40">
@@ -106,7 +110,20 @@
     <script>
         document.getElementById("date").innerHTML = new Date(document.lastModified)
     </script>
+    <script>
+        const btntotop = document.querySelector(".btntotop");
+        btntotop.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth" 
+    
+            });
+        });
+    
+    </script>
     <script src="js/date.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/weather.js"></script>
 </body>

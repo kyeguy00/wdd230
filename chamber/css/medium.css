@@ -41,7 +41,7 @@
     .join-link {
         position: absolute;
         top: 500px;
-        right: 200px;
+        right: 300px;
     }
 
     .join-us {
@@ -68,7 +68,7 @@
     .welcome {
         position: absolute;
         top: -20px;
-        right: 200px;
+        right: 300px;
         color: white;
         font-size: 2rem;
     }
@@ -126,9 +126,13 @@
         color: rgb(0, 0, 0);
         font-size: 12px;
     }
+
+    .footer-text {
+        font-size: 12px;
+    }
     .date {
         color: white;
-        font-size: 13pt;
+        font-size: 12pt;
         padding: 10px;
         text-align: center;
         justify-content: center;

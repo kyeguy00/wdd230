@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanab Chamber - Directory</title>
-    <link rel="stylesheet" href="directory-css/large.css">
-    <link rel="stylesheet" href="directory-css/medium.css">
-    <link rel="stylesheet" href="directory-css/base.css">
+    <title>Kanab Chamber - Contact</title>
+    <link rel="stylesheet" href="css/contact-large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -27,7 +27,7 @@
             <li><a href="#" onclick="toggleMenu()">&#9776Menu</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="#">Directory</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -39,34 +39,27 @@
         </div>
     </header>
 
-    <btn tabindex="0" class="btntotop"><i class="fa fa-arrow-up"></i></btn>
-
-    <h1>Check out some of Kanab's great companies</h1>
-    <div class="cards">
-        
+    <div class="contact-container">
+        <h1>Contact Information</h1>
+        <p><strong>Phone:</strong> (777)-777-7777</p>
+        <p><strong>Email:</strong> fakeemail@gmail.com</p>
+        <p><strong>Address:</strong> 123 Fake Avenue</p>
+        <p><strong>Office Hours:</strong> Mon-Fri, 9am-5pm</p>
     </div>
-   <footer>
-    <img id="footer-photo" src="images/Kanabchambers.webp" alt = "Kanab Chambers logo" height="40" width="40">
-    <span class="copyright">&copy;</span><span id="year"></span> <p class="footer-text">| Kanab Chamber | Kyle Southwick | WDD 230 Project |</p>
-     <div id="date"></div>
-</footer>
+
+
+
+
+    <footer>
+        <img id="footer-photo" src="images/Kanabchambers.webp" alt = "Kanab Chambers logo" height="40" width="40">
+        <span class="copyright">&copy;</span><span id="year"></span> <p class="footer-text">| Kanab Chamber | Kyle Southwick | WDD 230 Project |</p>
+         <div id="date"></div>
+    </footer>
 </body>
 <script>
     document.getElementById("date").innerHTML = new Date(document.lastModified)
 </script>
-<script>
-    const btntotop = document.querySelector(".btntotop");
-    btntotop.addEventListener("click", function() {
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: "smooth" 
-
-        });
-    });
-
-</script>
-<script src="js/date.js"></script>
+    <script src="js/date.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/visits.js"></script>
     <script src="js/directory.js"></script>

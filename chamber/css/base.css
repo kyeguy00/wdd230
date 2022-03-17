@@ -4,6 +4,13 @@
    }
 
 
+   footer {
+       min-width: 160%;
+       display: flex;
+       flex-direction: row;
+
+   }
+
     .join-link {
         position: absolute;
         top: 500px;

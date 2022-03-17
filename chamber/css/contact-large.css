@@ -16,6 +16,7 @@ footer {
     background-image: linear-gradient(to bottom right, rgb(131, 131, 131), rgb(71, 15, 15));
     color: rgb(0, 0, 0);
     position: absolute;
+    bottom: 0;
     
 }
 
@@ -547,17 +548,3 @@ input {
     ;
 }
 
-.btntotop {
-    background-color: rgb(128, 1, 1);
-    color:white;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9;
-    font-size: 30px;
-    padding: 5px;
-    transition: background-color 1s;
-    cursor: pointer;
-    font-family: none;
-    border-radius: 50%;
-}
