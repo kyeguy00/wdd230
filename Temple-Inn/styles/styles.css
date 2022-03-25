@@ -1,0 +1,251 @@
+header {
+    display: flex;
+    background-color: rgb(3, 4, 94);
+}
+
+body {
+    background-image: linear-gradient( rgb(0, 119, 182, .5), rgb(0, 150, 199, .5));
+}
+
+footer {
+    background-color: rgb(3, 4, 94);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-contact {
+    /* padding: 10px; */
+    flex-grow: 1;
+    
+}
+
+.logo {
+    padding: 10px;
+    border-radius: 30px;
+}
+
+ul {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+li, a {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    /* border: 1px solid; */
+    text-align: center;
+    transition: background-color 1s, border-radius 1s;
+}
+
+
+
+h1 {
+    color: white;
+    margin-left: 10px;
+    
+}
+
+.li {
+    position: relative;
+    padding: 10px;
+}
+
+.li.link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color:   rgb(194, 203, 229);
+    z-index: -1;
+    box-shadow: 2px 2px rgba(117, 117, 117, 0.493);
+    transition: transform 350ms, box-shadow 350ms;
+    transform: scaleY(0);
+    transform-origin: top;
+    border-radius: 30px;
+}
+
+.li.link:hover::before,
+.li.link:focus::before {
+    transform: scaleY(1);
+    transform-origin: bottom;
+}
+
+.li.link:hover, .li.link:focus {
+    color: black;
+}
+
+.li.link {
+    z-index: 1;
+    transition: 350ms;
+}
+
+.twitter, .instagram {
+    border-radius: 30px;
+    transition: transform 500ms;
+}
+
+.twitter:hover, .instagram:hover {
+    transform: scale(1.1);
+}
+
+.socials {
+    margin-right: 10px;
+    flex-grow: 0;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.current-weather {
+    border: 1px solid black;
+    display: flex;
+    background-color: rgb(2, 62, 138);
+    color: white;
+    padding: 10px;
+    grid-column: 2;
+    margin-top: 10px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather2 {
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.weather3 {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.weather4 {
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.weather2, .weather3, .weather4 {
+    background-color: rgb(2, 62, 138);
+    color: white;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.temp, .humidty-text, #icon-desc, .weather-title, #weathericon, .temp2, .humidty-text, #icon-desc2, .weather-title2, #weathericon2,
+.temp3, .humidty-text, #icon-desc3, .weather-title3, #weathericon3, .temp4, .humidty-text, #icon-desc4, .weather-title4, #weathericon4 {
+    padding: 5px;
+}
+
+
+
+
+.temple-join {
+    grid-column: 2;
+    margin-top: 10px;
+    position: relative;
+}
+
+.san-diego-join {
+    border-radius: 30px;
+    height: 500px;
+    width: 700px;
+}
+
+.make-reservation {
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    bottom: 20px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(3, 4, 94);
+    transition: background-color 800ms;
+}
+
+.make-reservation:hover {
+    background-color: rgb(0, 150, 199);
+}
+
+.contact {
+    grid-column: 3;
+    text-align: center;
+    background-color: rgb(2, 62, 138);
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 30px;
+    color: white;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bountiful-temple-container {
+    grid-column: 2;
+}
+
+.bountiful-temple {
+    width: 700px;
+    border-radius: 30px;
+
+}
+
+.temple-image-container {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.temple-image-container > img {
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.temple-info {
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;
+    color: black;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 500ms;
+    background: rgba(255, 255, 255, 0.548);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temple-info:hover {
+    opacity: 1;
+}
