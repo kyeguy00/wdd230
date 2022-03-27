@@ -23,7 +23,10 @@ fetch(apiURL)
     const description2 = jsObject.list[4].weather[0].description;
     const iconsrc2 = `https://openweathermap.org/img/w/${jsObject.list[4].weather[0].icon}.png`;
     const today = new Date();
+    console.log(today)
+    
     const tomorrow = new Date(today)
+    console.log(tomorrow)
     tomorrow.setDate(tomorrow.getDate() + 1)
     document.querySelector('.weather-title2').textContent = `${tomorrow.toLocaleString('en-US', {
         day: 'numeric',
