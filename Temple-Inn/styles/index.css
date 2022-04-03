@@ -1,0 +1,626 @@
+@font-face {
+  font-family: Archivo;
+  src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+}
+
+header {
+  display: flex;
+  background-color: rgb(3, 4, 94);
+}
+
+body {
+  background-image: linear-gradient(rgb(0, 119, 182, 0.5), rgb(0, 150, 199));
+  font-family: "Archivo Narrow";
+  margin: 0;
+}
+
+footer {
+  background-color: rgb(3, 4, 94);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-contact {
+  /* padding: 10px; */
+  flex-grow: 1;
+}
+
+.logo {
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.navigation li:first-child {
+  display: none;
+}
+
+.responsive li {
+  display: block;
+}
+
+ul {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+li,
+a {
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  /* border: 1px solid; */
+  text-align: center;
+  transition: background-color 1s, border-radius 1s;
+}
+
+h1 {
+  color: white;
+  margin-left: 10px;
+}
+
+.li {
+  position: relative;
+  padding: 10px;
+}
+
+.li.link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(194, 203, 229);
+  z-index: -1;
+  box-shadow: 2px 2px rgba(117, 117, 117, 0.493);
+  transition: transform 350ms, box-shadow 350ms;
+  transform: scaleY(0);
+  transform-origin: top;
+  border-radius: 30px;
+}
+
+.li.link:hover::before,
+.li.link:focus::before {
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
+
+.li.link:hover,
+.li.link:focus {
+  color: black;
+}
+
+.li.link {
+  z-index: 1;
+  transition: 350ms;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+}
+
+.dropdownContent a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(194, 203, 229);
+border: 1px solid black;
+border-radius: 30px;
+text-align: center;
+transition: all 600ms;
+}
+
+.dropdownContent a:nth-child(1) {
+  margin-top: 10px;
+}
+
+.dropdownContent a:nth-child(2) {
+  margin-top: 5px;
+}
+
+.dropdownContent a:hover {
+  background-color: rgb(3, 4, 94);
+  color: white;
+}
+
+.dropdown:hover .dropdownContent{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.twitter,
+.instagram {
+  border-radius: 30px;
+  transition: transform 500ms;
+}
+
+.twitter:hover,
+.instagram:hover {
+  transform: scale(1.1);
+}
+
+.socials {
+  margin-right: 10px;
+  flex-grow: 0;
+}
+
+.templeActivity1 {
+  margin: 10px;
+  grid-column: 1;
+  grid-row: 2;
+  background-image: url(../Images/Jordan-river-utah-temple.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.jordanHeader, .saltLakeHeader, .draperHeader {
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(3, 4, 94, 0.8);
+    border-radius: 30px;
+}
+
+.jordanContent, .saltLakeContent, .draperContent {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: rgb(0,0,0,0.7);
+}
+
+.templeActivity2 {
+    margin: 10px;
+    grid-column: 1;
+    grid-row: 3;
+    background-image: url(../Images/manti-temple.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.templeQuote {
+    background-image: linear-gradient(rgb(3, 4, 94), rgb(3, 4, 94,0.5));
+    color: white;
+    grid-row: 3/5;
+    grid-column: 3;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.templeActivity3 {
+    margin: 10px;
+    grid-column: 1;
+    background-image: url(../Images/draper-temple.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.alert {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/4;
+  background-image: linear-gradient(rgb(180, 33, 33, 0.8), rgb(0, 0, 0, 0.8));
+  margin: 10px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.weatherEvent {
+  color: white;
+  font-size: 30px;
+  background-color: red;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.weatherAlert {
+  text-align: center;
+  background-color: rgb(206, 116, 116);
+  z-index: 20;
+  padding: 5px;
+}
+
+.closeAlert {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 5px;
+  z-index: 20;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.current-weather {
+  display: flex;
+  background-image: linear-gradient(rgb(2, 62, 138), rgb(2, 62, 138, 0.3));
+  color: white;
+  padding: 10px;
+  grid-column: 2;
+  margin-top: 10px;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather2 {
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.weather3 {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.weather4 {
+  grid-column: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.weather2,
+.weather3,
+.weather4 {
+  background-image: linear-gradient(rgb(2, 62, 138), rgb(2, 62, 138, 0.3));
+  color: white;
+  border-radius: 30px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.temp,
+.humidty-text,
+#icon-desc,
+.weather-title,
+#weathericon,
+.temp2,
+.humidty-text,
+#icon-desc2,
+.weather-title2,
+#weathericon2,
+.temp3,
+.humidty-text,
+#icon-desc3,
+.weather-title3,
+#weathericon3,
+.temp4,
+.humidty-text,
+#icon-desc4,
+.weather-title4,
+#weathericon4 {
+  padding: 5px;
+}
+
+.temple-join {
+  grid-column: 2;
+  margin-top: 10px;
+  position: relative;
+}
+
+.san-diego-join {
+  border-radius: 30px;
+  height: 500px;
+  width: 700px;
+}
+
+.make-reservation {
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  bottom: 20px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: rgb(3, 4, 94);
+  transition: background-color 800ms;
+}
+
+.make-reservation:hover {
+  background-color: rgb(0, 150, 199);
+}
+
+.contact {
+  grid-column: 3;
+  text-align: center;
+  background-color: rgb(2, 62, 138);
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 30px;
+  color: white;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.address {
+    text-decoration: underline;
+}
+
+.bountiful-temple-container {
+  grid-column: 2;
+}
+
+.bountiful-temple {
+  width: 700px;
+  border-radius: 30px;
+}
+
+.temple-image-container {
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.temple-image-container > img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.temple-info {
+  position: absolute;
+  z-index: 1;
+  font-size: 30px;
+  color: black;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 500ms;
+  background: rgba(255, 255, 255, 0.548);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.temple-info:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1250px) {
+  .content-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .san-diego-join {
+    border-radius: 30px;
+    height: 300px;
+    width: 400px;
+  }
+
+  .temple-join {
+    grid-column: 1;
+  }
+
+  .bountiful-temple {
+    width: 400px;
+    height: 300px;
+    border-radius: 30px;
+  }
+
+  .current-weather {
+    border: 1px solid black;
+    display: flex;
+    background-color: rgb(2, 62, 138);
+    color: white;
+    grid-column: 1;
+    grid-row: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .weather2 {
+    grid-column: 1;
+  }
+
+  .weather3 {
+    grid-column: 2;
+  }
+
+  .weather4 {
+    grid-column: 1/3;
+  }
+
+  .contact {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .bountiful-temple-container {
+    grid-column: 2;
+  }
+
+  .templeQuote {
+    grid-row: 2;
+    grid-column: 2;
+    font-size: 20px;
+}
+
+.templeActivity3 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+  .temple-info {
+    font-size: 20px;
+    color: black;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.548);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dropdownContent a {
+    display: none;
+}
+}
+
+@media only screen and (max-width: 750px) {
+  .content-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .san-diego-join {
+    border-radius: 30px;
+    height: 200px;
+    width: 400px;
+  }
+
+  .temple-join {
+    grid-column: 1;
+  }
+
+  .bountiful-temple {
+    width: 400px;
+    border-radius: 30px;
+  }
+
+  .current-weather {
+    border: 1px solid black;
+    display: flex;
+    background-color: rgb(2, 62, 138);
+    color: white;
+    grid-column: 1;
+    grid-row: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .templeActivity1 {
+    grid-row: 3;
+  }
+
+  .templeActivity2 {
+    grid-row: 4;
+  }
+
+  .templeActivity3 {
+    grid-row: 5;
+    grid-column: 1;
+  }
+
+  .weather2 {
+    grid-column: 1;
+  }
+
+  .weather3 {
+    grid-column: 1;
+  }
+
+  .weather4 {
+    grid-column: 1;
+  }
+
+  .contact {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .bountiful-temple-container {
+    grid-column: 1;
+  }
+
+  .temple-info {
+    font-size: 20px;
+    color: black;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.548);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .templeQuote {
+    grid-row: 6;
+    grid-column: 1;
+    font-size: 20px;
+}
+
+  header {
+    font-size: 10px;
+  }
+  .logo {
+    height: 30px;
+  }
+  .instagram,
+  .twitter {
+    height: 30px;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+  }
+  .navigation li {
+    display: none;
+  }
+  .navigation li:first-child {
+    display: flex;
+    font-size: 13pt;
+  }
+  .responsive li {
+    display: flex;
+    font-size: 13pt;
+  }
+
+  footer {
+    font-size: 10px;
+    width: 100%;
+  }
+  .footer-contact {
+    padding: 5px;
+  }
+}

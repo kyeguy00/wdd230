@@ -4,26 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>Temple Inn & Suites</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Archivo Narrow' rel='stylesheet'>
+    <title>Temple Inn & Suites - Home</title>
 </head>
 <body>
     <header>
         <img class = "logo" src="Images/temple-inn copy.jpg" height="50">
         <h1 class="header">Temple Inn & Suites</h1>
-        <ul>
-            <li ><a class="li link" href="#">Home</a></li>
-            <li ><a class="li link" href="#">Temple</a></li>
-            <li ><a class="li link" href="#">Reservations</a></li>
-            <li ><a class="li link" href="#">Services</a></li>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776Menu</a></li>
+            <li ><a class="li link" href="index.html">Home</a></li>
+            <li ><a class="li link" href="temple.html">Temple</a></li>
+            <li ><a class="li link" href="reservation.html">Reservations</a></li>
+            <li class="dropdown"><a class="li link" href="services.html">Services</a>
+                <div class="dropdownContent">
+                    <a href="fullTimeTemple.html">Full Time Temple Missionary</a>
+                    <a href="reception.html">Reception</a>
+                </div>
+            </li>
             <li class="socials"><a  href="#"><img class="instagram" src="Images/instagram.png" height="50"></a></li>
             <li class="socials"><a  href="#"><img class="twitter" src="Images/twitter.png" height="50"></a></li>
         </ul>
     </header>
 <div class="content-container">
-    
+
+<div class="alert"></div>
+
     <div class="current-weather">
-        <h2 class="weather-title">Todays Weather</h2>
+        <h2 class="weather-title">Bethesda</h2>
         <img id="weathericon" src="">
         <p id="icon-desc"></p>
         <p class="temp">Temperature: <span id="temperature"></span>°F  </p>
@@ -36,13 +45,33 @@
         <h2>Contact</h2>
         <p>Phone: (777)-777-7777 </p>
         <p>Email: templeinn&suites@gmail.com</p>
-        <p>Location: <a href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9833182,-77.0961849,18.5z/data=!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318">4800 Montgomery Ln #300, Bethesda, MD 20814 </a></p>
+        <p>Location: <a class = 'address' href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9833182,-77.0961849,18.5z/data=!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318">4800 Montgomery Ln #300, Bethesda, MD 20814 </a></p>
     </div>
+
+    
+    <div class="templeActivity1">
+        <h2 class="jordanHeader"> Proxy Baptisms</h2>
+        <p class="jordanContent">The youth of the 23rd Ward in Jordan River Utah, will be doing baptisms on the 16th of April</p>
+    </div>
+
+    <div class="templeActivity2">
+        <h2 class="saltLakeHeader">Proxy Initiatories</h2>
+        <p class="saltLakeContent">The Relief Society of the 6th ward in Manti Utah will be doing initiatories on the 23rd of April</p>
+    </div>
+
+    
 
     <div class="temple-join">
         <img class="san-diego-join"src="Images/San-Diego-California-Temple1.jpg" alt="San Diego Temple">
-        <a class="make-reservation" href="index.html">Make a Reservation</a>
+        <a class="make-reservation" href="reservation.html">Make a Reservation</a>
     </div>
+
+    <div class="templeActivity3">
+        <h2 class="draperHeader">Proxy Sealings</h2>
+        <p class="draperContent">The Elders Qurorom of the 4th ward in Draper Utah will be doing initiatories on the 30th of April</p>
+    </div>
+
+    
 
     <div class="bountiful-temple-container">
         <div class="temple-image-container">
@@ -50,7 +79,12 @@
             <div class="temple-info"><p>The Bountiful Utah Temple was opened on November 4th, 1994. It is the 47th operating temple and the eighth 
                 constructed temple in Utah.</p></div>
         </div>
-        
+
+    </div>
+    <div class="templeQuote">
+        <p>"In order that this work may be done, we must have Temples in which to do it; and what I wish to say to you, my brethren and sisters, 
+            is that the God of heaven requires us to rise up and build them, that the work of redemption may be hastened. Our reward will meet us when 
+            we go behind the veil." - Wilford Woodruff</p>
     </div>
     <div class="weather2">
         <h2 class="weather-title2"></h2>
@@ -76,9 +110,10 @@
         <p class="humidity-text">Humidity: <span id="humidity4"></span>  </p>
     </div>
 </div>
-<footer><img class = "logo" src="Images/temple-inn copy.jpg" height="50"><p class="footer-contact">Phone: (777)-777-7777 </p>
-    <p class="footer-contact">Email: templeinn&suites@gmail.com</p>
-    <p class="footer-contact">Location: <a href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9833182,-77.0961849,18.5z/data=!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318">4800 Montgomery Ln #300, Bethesda, MD 20814 </a></p></footer>
+<footer><img class = "logo" src="Images/temple-inn copy.jpg" height="50"><span class="footer-contact">Phone: (777)-777-7777 </span>
+    <span class="footer-contact">Email: templeinn&suites@gmail.com</span>
+    <span class="footer-contact">Location: <a class='address' href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9833182,-77.0961849,18.5z/data=!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318">4800 Montgomery Ln #300, Bethesda, MD 20814 </a></span></footer>
 <script src="js/weather.js"></script>
+<script src="js/menu.js"></script>
 </body>
 </html>

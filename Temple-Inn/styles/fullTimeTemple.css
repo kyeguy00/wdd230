@@ -1,0 +1,339 @@
+@font-face {
+    font-family: Archivo;
+    src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+  }
+
+header {
+    display: flex;
+    background-color: rgb(3, 4, 94);
+}
+
+body {
+    font-family: 'Archivo Narrow';
+    margin: 0;
+}
+
+footer {
+    background-color: rgb(3, 4, 94);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-contact {
+    /* padding: 10px; */
+    flex-grow: 1;
+    
+}
+
+.logo {
+    padding: 10px;
+    border-radius: 30px;
+}
+
+
+.navigation li:first-child {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+ul {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+li, a {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    /* border: 1px solid; */
+    text-align: center;
+    transition: background-color 1s, border-radius 1s;
+}
+
+
+
+h1 {
+    color: white;
+    margin-left: 10px;
+    
+}
+
+.li {
+    position: relative;
+    padding: 10px;
+}
+
+.li.link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color:   rgb(194, 203, 229);
+    z-index: -1;
+    box-shadow: 2px 2px rgba(117, 117, 117, 0.493);
+    transition: transform 350ms, box-shadow 350ms;
+    transform: scaleY(0);
+    transform-origin: top;
+    border-radius: 30px;
+}
+
+.li.link:hover::before,
+.li.link:focus::before {
+    transform: scaleY(1);
+    transform-origin: bottom;
+}
+
+.li.link:hover, .li.link:focus {
+    color: black;
+}
+
+.li.link {
+    z-index: 1;
+    transition: 350ms;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+}
+
+.dropdownContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(194, 203, 229);
+  border: 1px solid black;
+  border-radius: 30px;
+  text-align: center;
+  transition: all 600ms;
+}
+
+.dropdownContent a:nth-child(1) {
+    margin-top: 10px;
+}
+
+.dropdownContent a:nth-child(2) {
+    margin-top: 5px;
+}
+
+.dropdownContent a:hover {
+    background-color: rgb(3, 4, 94);
+    color: white;
+}
+
+.dropdown {
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown:hover .dropdownContent{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.twitter, .instagram {
+    border-radius: 30px;
+    transition: transform 500ms;
+}
+
+.twitter:hover, .instagram:hover {
+    transform: scale(1.1);
+}
+
+.socials {
+    margin-right: 10px;
+    flex-grow: 0;
+}
+
+h2 {
+    background-color: rgb(3, 4, 94, 0.5);
+    color: white;
+    padding: 5px;
+}
+
+.oaklandTemple {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    filter: opacity(70%);
+}
+
+.fullTimeTempleHeader {
+    text-align: center;
+    font-size: 30px;
+}
+
+.suiteContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.kingSuite, .queenSuite {
+    grid-column: 1;
+}
+
+.singleSuite, .doubleSuite {
+    grid-column: 2;
+}
+
+.doubleSuite {
+    grid-row: 1;
+}
+
+.kingSuite, .queenSuite, .singleSuite, .doubleSuite {
+    position: relative;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kingSuite > p, .queenSuite > p, .singleSuite > p, .doubleSuite > p {
+    position: absolute;
+    inset: 0;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    background-color: rgb(3, 4, 94);
+    border-radius: 30px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.contactForm {
+    grid-row: 1/3;
+    grid-column: 3;
+    text-align: center;
+    background-color: rgba(3, 5, 94, 0.637);
+    margin: 10px;
+    border-radius: 30px;
+    color: white;
+}
+
+#submit {
+    background-color: rgba(3, 4, 94);
+    color: white;
+    height: 50px;
+    margin-top: 10px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    transition: background-color 600ms, color 600ms, transform 600ms;
+    border-radius: 30px;
+    border: none;
+  }
+  
+  #submit:hover {
+    background-color: rgba(0, 119, 182);
+    color: white;
+    transform: scale(1.1);
+  }
+
+  #email, #name {
+      padding: 8px;
+      border-radius: 30px;
+  }
+
+  #comments {
+      padding: 5px;
+  }
+
+@media only screen and (max-width: 1250px) {
+    .dropdownContent a {
+        display: none;
+    }
+
+    body {
+        background-image: linear-gradient(rgb(0, 119, 182, 0.5), rgb(0, 150, 199));
+    }
+    .oaklandTemple {
+        display: none;
+    }
+    .contactForm {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .suiteContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .kingSuite, .queenSuite, .singleSuite, .doubleSuite, .contactForm {
+        grid-column: 1;
+    }
+
+    
+}
+
+@media only screen and (max-width: 750px) {
+
+   
+
+    body {
+        background-image: linear-gradient(rgb(0, 119, 182, 0.5), rgb(0, 150, 199));
+    }
+    footer {
+        font-size: 10px;
+        width: 100%;
+    }
+    .footer-contact {
+        padding: 5px;
+    }
+    header {
+        font-size: 10px;
+    }
+    .logo {
+        height: 30px;
+    }
+    .instagram, .twitter {
+        height: 30px;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        text-align: center;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation li:first-child {
+        display: flex;
+        font-size: 13pt;
+        
+    }
+    .responsive li {
+        display: flex;
+        font-size: 13pt;
+    }
+
+    .kingSuite, .queenSuite, .singleSuite, .doubleSuite, .contactForm {
+        grid-column: 1;
+        width: 70vw;
+    }
+
+    .contactForm {
+        grid-row: 8;
+        width: 90vw;
+    }
+
+    .oaklandTemple {
+        display: none;
+    }
+}

@@ -45,7 +45,7 @@ function displayBusinesses(business) {
     address.textContent = `Address: ${business.address}`;
     address.setAttribute("class", "phone-address");
 
-   
+    
     
 
     card.appendChild(h2);

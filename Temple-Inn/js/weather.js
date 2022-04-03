@@ -4,6 +4,7 @@ fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
     console.log(jsObject);
+
     /* Current Temp */
     const temperature1 = jsObject.list[0].main.temp.toFixed(0)
     const description1 = jsObject.list[0].weather[0].description;
@@ -23,10 +24,7 @@ fetch(apiURL)
     const description2 = jsObject.list[4].weather[0].description;
     const iconsrc2 = `https://openweathermap.org/img/w/${jsObject.list[4].weather[0].icon}.png`;
     const today = new Date();
-    console.log(today)
-    
     const tomorrow = new Date(today)
-    console.log(tomorrow)
     tomorrow.setDate(tomorrow.getDate() + 1)
     document.querySelector('.weather-title2').textContent = `${tomorrow.toLocaleString('en-US', {
         day: 'numeric',
@@ -87,9 +85,42 @@ fetch(apiURL)
     speed4.innerHTML = humidityfeel4
     })
 
-// const weatherAlert = 'https://api.openweathermap.org/data/2.5/onecall?lat=38.8&lon=12.09&callback=test&appid=bf69c19713fcaa80a4c9c98f9fb0dc7a'
+const weatherAlert = 'https://api.openweathermap.org/data/2.5/onecall?lat=38.9807&lon=-77.1003&units=imperial&appid=bf69c19713fcaa80a4c9c98f9fb0dc7a'
+const alert = document.querySelector('.alert');
+fetch(weatherAlert)
+    .then((response) => response.json())
+    .then((jsObject) => {
+    console.log(jsObject); 
 
-// fetch(weatherAlert)
-//     .then((response) => response.json())
-//     .then((jsObject) => {
-//     console.log(jsObject); })
+    if (jsObject.alerts == null) {
+       
+    } else {
+    let card = document.createElement('section');
+    let h2 = document.createElement('h2');
+    let p = document.createElement('p');
+    let span = document.createElement('span');
+
+
+    h2.textContent = jsObject.alerts[0].event;
+    h2.setAttribute('class', 'weatherEvent');
+    
+    p.textContent = jsObject.alerts[0].alert;
+    p.setAttribute('class', 'weatherAlert');
+
+    span.setAttribute('class', 'closeAlert');
+    span.setAttribute('onclick', `this.parentElement.style.display='none';`)
+    span.innerHTML = `&times;`
+    
+    card.appendChild(h2);
+    card.appendChild(span);
+    card.appendChild(p);
+    
+    
+    
+    alert.appendChild(card);
+    
+    }
+    
+
+})
+

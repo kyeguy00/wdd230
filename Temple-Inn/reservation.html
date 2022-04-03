@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reservation.css">
+    <link href='https://fonts.googleapis.com/css?family=Archivo Narrow' rel='stylesheet'>
+    <title>Temple Inn & Suites - Reservations</title>
+</head>
+<body>
+    <header>
+        <img class = "logo" src="Images/temple-inn copy.jpg" height="50">
+        <h1 class="header">Temple Inn & Suites</h1>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776Menu</a></li>
+            <li ><a class="li link" href="index.html">Home</a></li>
+            <li ><a class="li link" href="temple.html">Temple</a></li>
+            <li ><a class="li link" href="reservation.html">Reservations</a></li>
+            <li class="dropdown"><a class="li link" href="services.html">Services</a>
+                <div class="dropdownContent">
+                    <a href="fullTimeTemple.html">Full Time Temple Missionary</a>
+                    <a href="reception.html">Reception</a>
+                </div>
+            </li>
+            <li class="socials"><a  href="#"><img class="instagram" src="Images/instagram.png" height="50"></a></li>
+            <li class="socials"><a  href="#"><img class="twitter" src="Images/twitter.png" height="50"></a></li>
+        </ul>
+    </header>
+
+    <form action="thankyou.html">
+    <div class="formContainer">
+    <div class="stayLocation">
+        <h2>Where would you like to stay?</h2>
+        <label for="location">Location:</label><br>
+        <input type="text" id="location" name="location" required>
+    </div>
+        
+    <div class="reservationDate">
+        <h2>When would you like to make a reservation?</h2>
+        <label for="start">Start date:</label><br>
+        <input type="date" id="start" name="start" required><br>
+
+        <label for="end">End date:</label><br>
+        <input type="date" id="end" name="end" required><br>
+    </div>
+
+    <div class="roomType">
+        <h2> Type of room: </h2>
+        <input type="radio" id="single" name="roomType" value="Single" required>
+        <label for="single">Single</label><br>
+
+        <input type="radio" id="double" name="roomType" value="Double" required>
+        <label for="double">Double</label><br>
+
+        <input type="radio" id="queen" name="roomType" value="Queen" required>
+        <label for="queen">Queen</label><br>  
+
+        <input type="radio" id="king" name="roomType" value="King" required>
+        <label for="king">King</label><br>
+    </div>
+
+    <div class="numberOfRooms">
+        <h2>Number of rooms:</h2>
+
+        <label for="numberOfRooms">Enter room amount (1-4)</label><br>
+        <input type="number" name="numberOfRooms" id="numberOfRooms" min="1" max="4" required><br>
+    </div>
+
+    <div class="customerInfo">
+        <h2>Customer Information</h2>
+
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone</label><br>
+        <input type="phone" name="phone" id="phone"><br>
+
+        <label for="address">Address:</label><br>
+        <input type="address" id="address" name="address"><br>
+    </div>
+
+    <div class="comments">
+        
+        <textarea name="comments" id="comments" cols="50" rows="20"></textarea><br>
+        <label id='commentsLabel'for="comments">Additional Requests/Accommodations</label><br>
+    </div>
+    
+    <div class="submit">
+        <input type="submit" value="Submit" id="submit">
+    </div>
+
+    </div>
+    </form>
+
+    <footer><img class = "logo" src="Images/temple-inn copy.jpg" height="50"><span class="footer-contact">Phone: (777)-777-7777 </span>
+        <span class="footer-contact">Email: templeinn&suites@gmail.com</span>
+        <span class="footer-contact">Location: <a href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9833182,-77.0961849,18.5z/data=!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318">4800 Montgomery Ln #300, Bethesda, MD 20814 </a></span></footer>
+<script src="js/menu.js"></script>
+</body>
+</html>
